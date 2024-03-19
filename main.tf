@@ -10,7 +10,7 @@ variable "sa_key" {
 resource "google_container_cluster" "primary" {
   name     = "my-gke-cluster"
   location = "us-central1"
-  enable_autopilot   = true
+  enable_autopilot   = false
   initial_node_count       = 1
 
  database_encryption {
