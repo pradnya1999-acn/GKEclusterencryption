@@ -13,8 +13,8 @@ resource "google_container_cluster" "primary" {
   enable_autopilot   = false
   initial_node_count       = 1
 
- database_encryption {
-   state = "ENCRYPTED"
-   key_name = "projects/parabolic-base-409505/locations/us-central1/keyRings/secret-keyring/cryptoKeys/secret-key"
-}
+ #database_encryption {
+  # state = "ENCRYPTED"
+  # key_name = "projects/parabolic-base-409505/locations/us-central1/keyRings/secret-keyring/cryptoKeys/secret-key"
+#}
 }
